@@ -29,6 +29,7 @@ public class SecondMain {
 
         System.out.println("Запросы : " + list + "\nобщее количество запросов :  " + list.size());
         System.out.println("\nЧастота повторения запросов :");
+
         for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
             int max = 100;
             if (entry.getValue() > max) {
