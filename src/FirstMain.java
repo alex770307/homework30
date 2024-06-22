@@ -19,15 +19,15 @@ public class FirstMain {
 
         }
 
-        System.out.println("Запросы : " + list+ "\nобщее количество запросов :  " + list.size());
+        System.out.println("Запросы : " + list + "\nобщее количество запросов :  " + list.size());
         System.out.println("\nЧастота повторения запросов :");
 
         for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
             int max = 100;
-            if (entry.getValue() >max){
-                frequencyMap.put(entry.getKey(),max);
+            if (entry.getValue() > max) {
+                frequencyMap.put(entry.getKey(), max);
             }
-            System.out.println("Запрос  "+entry.getKey() + "  Количество повторений :  " + entry.getValue());
+            System.out.println("Запрос  " + entry.getKey() + "  Количество повторений :  " + entry.getValue());
         }
     }
 }
